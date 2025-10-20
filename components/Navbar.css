@@ -1,0 +1,80 @@
+.navbar {
+  --border-bottom-width: 1px;
+  --border-color: rgba(243, 236, 254, 0.05);
+  --border-left-width: 0px;
+  --border-right-width: 0px;
+  --border-style: solid;
+  --border-top-width: 0px;
+
+  width: 80%;
+  max-width: 1200px;
+  border-radius: 15px;
+  border-bottom: var(--border-bottom-width) var(--border-style) var(--border-color);
+  backdrop-filter: blur(10px);
+  background-color: rgba(5, 0, 8, 0.4);
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 50;
+}
+
+.navbar-content {
+  width: 100%;
+  max-width: 1200px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* space-between logo, center links, download btn */
+}
+
+/* Logo */
+.navbar-logo img {
+  height: 40px;
+  width: auto;
+  
+}
+
+/* Center links */
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0 auto; /* this pushes it toward center */
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #f3ecfe;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.navbar-links a:hover {
+  color: white;
+}
+
+/* Download Button */
+.download-btn {
+  text-decoration: none;
+  color: #090D20;
+  background: linear-gradient(89deg, #9FA5F1 0%, #9FA5F1 100%);
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: 500;
+   margin-right: 20px;
+  box-shadow: rgba(114, 69, 186, 0.03) 0px 0.5px 0.5px,
+              rgba(114, 69, 186, 0.25) 0px 4px 4px,
+              rgba(255, 255, 255, 0.25) 0px 4px 4px inset;
+  transition: transform 0.2s ease;
+}
+
+.download-btn:hover {
+  background: linear-gradient(89deg, #7CE3FA 0%, #A39FF0 68%);
+  color: #ffffff; /* optional: make text white on hover */
+  transform: scale(1.05); /* keeps the nice hover effect */
+}
