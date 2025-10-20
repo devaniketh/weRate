@@ -1,7 +1,7 @@
-
 "use client"
 
 import React from "react"
+import Link from "next/link"
 
 export default function Navbar() {
   return (
@@ -13,7 +13,9 @@ export default function Navbar() {
     >
       <div className="w-full max-w-[1200px] h-[70px] flex items-center justify-between">
         <div className="h-[40px]">
-          <img src="/logo.png" alt="Logo" className="h-[40px] w-auto" width={100} height={60} />
+          <Link href="/">
+            <img src="/logo.png" alt="Logo" className="h-[40px] w-auto" width={100} height={60} />
+          </Link>
         </div>
 
         <ul className="flex gap-8 list-none m-0">
