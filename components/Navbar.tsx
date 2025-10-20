@@ -1,6 +1,7 @@
 "use client"
 
 import React from "react"
+import Image from "next/image"
 import Link from "next/link"
 
 export default function Navbar() {
@@ -14,7 +15,7 @@ export default function Navbar() {
       <div className="w-full max-w-[1200px] h-[70px] flex items-center justify-between">
         <div className="h-[40px]">
           <Link href="/">
-            <img src="/logo.png" alt="Logo" className="h-[40px] w-auto" width={100} height={60} />
+            <Image src="/logo.png" alt="Logo" className="h-[40px] w-auto" width={100} height={60} />
           </Link>
         </div>
 
