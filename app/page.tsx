@@ -5,6 +5,7 @@ import HeroSection from "@/components/HeroSection";
 import HeroImage from "@/components/HeroImage";
 import Patnership from "@/components/Partnership";
 import ReviewSection from "@/components/ReviewSection";
+import FeatureCards from "@/components/FeatureCards";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
     <HeroImage/>
     <Patnership/>
     <ReviewSection/>
+    <FeatureCards/>
    </div>
   );
 }
