@@ -6,7 +6,7 @@ import HeroImage from "@/components/HeroImage";
 import Patnership from "@/components/Partnership";
 import ReviewSection from "@/components/ReviewSection";
 import FeatureCards from "@/components/FeatureCards";
-
+import NewFeatureContainer from "@/components/NewFeatureContainer";
 export default function Home() {
   return (
    <div>
@@ -16,6 +16,7 @@ export default function Home() {
     <Patnership/>
     <ReviewSection/>
     <FeatureCards/>
+    <NewFeatureContainer/>
    </div>
   );
 }
