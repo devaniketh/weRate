@@ -1,4 +1,5 @@
 "use client"
+
 import React from "react";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
@@ -7,6 +8,8 @@ import Patnership from "@/components/Partnership";
 import ReviewSection from "@/components/ReviewSection";
 import FeatureCards from "@/components/FeatureCards";
 import NewFeatureContainer from "@/components/NewFeatureContainer";
+import ReviewsSection from "@/components/ReviewsSection";
+
 export default function Home() {
   return (
    <div>
@@ -17,6 +20,7 @@ export default function Home() {
     <ReviewSection/>
     <FeatureCards/>
     <NewFeatureContainer/>
+    <ReviewsSection/>
    </div>
   );
 }

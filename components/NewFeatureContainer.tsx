@@ -2,8 +2,10 @@
 
 import React from "react"
 import { IoTrophyOutline } from "react-icons/io5"
-import { FaGift } from "react-icons/fa";
+import { FaGift , FaStar } from "react-icons/fa";
 import { FiCheck } from "react-icons/fi";
+import { IoIosColorPalette } from "react-icons/io";
+import { BsFillLightningChargeFill } from "react-icons/bs";
 
 export default function NewFeatureContainer() {
   return (
@@ -71,10 +73,9 @@ export default function NewFeatureContainer() {
             Customize your avatar and level up as you explore and review.
           </p>
 
-          {/* First Icon Section */}
           <div className="flex items-center mt-6">
             <div className="bg-[#99aef2] rounded-lg p-1 inline-flex items-center justify-center">
-              <IoTrophyOutline className="text-black text-3xl" />
+              <IoIosColorPalette className="text-black text-3xl" />
             </div>
             <p className="text-white text-lg ml-4">
               Unlock traits: Earn hats, outfits, accessories and more from quests or events.
@@ -82,10 +83,9 @@ export default function NewFeatureContainer() {
           </div>
           <div className="border-b border-[#111a1e] mt-8 mb-8 w-full"></div>
 
-          {/* Second Icon Section */}
           <div className="flex items-center mt-6">
             <div className="bg-[#99aef2] rounded-lg p-1 inline-flex items-center justify-center">
-              <FaGift className="text-black text-3xl" />
+              <BsFillLightningChargeFill className="text-black text-3xl" />
             </div>
             <p className="text-white text-lg ml-4">
               Trait packs: Collect themed sets that boost your profile’s look and rarity.
@@ -93,10 +93,9 @@ export default function NewFeatureContainer() {
           </div>
           <div className="border-b border-[#111a1e] mt-8 mb-8 w-full"></div>
 
-          {/* Third Icon Section */}
           <div className="flex items-center mt-6">
             <div className="bg-[#99aef2] rounded-lg p-1 inline-flex items-center justify-center">
-              <FiCheck className="text-black text-3xl" />
+              <FaStar className="text-black text-3xl" />
             </div>
             <p className="text-white text-lg ml-4">
               Evolve over time: Each review and check-in grows your Terry’s level and flair.
