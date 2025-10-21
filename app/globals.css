@@ -51,3 +51,12 @@ body {
   mask-image: linear-gradient(to right, transparent, black 70%, black 70%, transparent);
 }
 
+@keyframes slideUp {
+  0% { transform: translateY(100%); opacity: 0; }
+  30% { opacity: 1; }
+  100% { transform: translateY(-100%); opacity: 0; }
+}
+
+.animate-slideUp {
+  animation: slideUp 0.5s ease-in-out forwards;
+}
