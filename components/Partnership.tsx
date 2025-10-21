@@ -15,7 +15,7 @@ export default function Partnership() {
   return (
     <section className="text-center mt-16">
       <p className="text-[#FAF7FF] text-lg font-medium tracking-wide mb-6">
-        In Partnership With
+        IN PATERNERSHIP WITH
       </p>
 
       <div className="marquee-container">
