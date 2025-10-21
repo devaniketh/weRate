@@ -5,7 +5,7 @@ import Image from "next/image"
 
 export default function HeroImage() {
   return (
-    <div className="w-screen h-[750px] rounded-[20px] overflow-hidden flex justify-center items-center">
+    <div className="w-screen h-[750px] rounded-[30px] overflow-hidden flex justify-center items-center">
       <Image
         src="/werate.png"
         alt="Image of Mobile Phones"
