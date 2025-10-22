@@ -1,10 +1,12 @@
 "use client"
 
 import React, { useState } from "react"
+import { faqs } from "../data/faqsData"
 
 export default function OptInFaqBlock() {
   const [email, setEmail] = useState("")
   const [error, setError] = useState("")
+  const [openIndex, setOpenIndex] = useState<number | null>(null)
 
   const handleSubmit = () => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
@@ -39,7 +41,7 @@ export default function OptInFaqBlock() {
               rgba(0,0,0,0.2) 16%
             )
           `,
-          backgroundBlendMode: "overlay"
+          backgroundBlendMode: "overlay",
         }}
       >
         <div className="flex flex-col justify-center items-center text-center h-full w-full gap-6">
@@ -70,6 +72,45 @@ export default function OptInFaqBlock() {
           {error && <p className="text-red-500 mt-2">{error}</p>}
         </div>
       </div>
+      <h1 className="text-white text-4xl font-extrabold text-center mt-10 mb-12">
+        Frequently Asked Questions
+      </h1>
+
+      <div className="flex flex-col gap-3 max-w-3xl mx-auto">
+        {faqs.map((faq, index) => (
+          <div
+            key={index}
+            className="bg-[#050e12] rounded-2xl p-6 transition-all duration-500 ease-in-out border-b border-[#373f42]"
+          >
+            <div
+              className="flex justify-between items-center cursor-pointer"
+              onClick={() => setOpenIndex(openIndex === index ? null : index)}
+            >
+              <h2 className="text-[#faf7ff] text-xl font-semibold">
+                {faq.question}
+              </h2>
+              <button
+                className={`text-[#faf7ff] text-2xl transform transition-transform duration-300 ${
+                  openIndex === index ? "rotate-45" : ""
+                }`}
+              >
+                ×
+              </button>
+            </div>
+
+            <div
+              className={`overflow-hidden transition-all duration-500 ease-in-out ${
+                openIndex === index ? "max-h-40 opacity-100 mt-4" : "max-h-0 opacity-0"
+              }`}
+            >
+              <p className="text-[#85838b] text-base">{faq.answer}</p>
+            </div>
+          </div>
+        ))}
+      </div>
     </section>
   )
 }
+
+
+
