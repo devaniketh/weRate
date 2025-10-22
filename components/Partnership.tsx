@@ -1,7 +1,6 @@
 "use client"
 
 import React from "react"
-import Image from "next/image"
 
 export default function Partnership() {
   const logos = [
@@ -9,7 +8,6 @@ export default function Partnership() {
     "/solanafoundation.png",
     "/bonk.png",
     "/monkeydao.png",
-    "/logo5.png",
   ]
 
   return (

@@ -4,7 +4,7 @@ import React from "react"
 import Image from "next/image"
 export default function ReviewsSection() {
   return (
-    <section className="mt-10 max-w-6xl mx-auto px-4 flex flex-col items-center text-center">
+    <section id = "reviews" className="mt-10 max-w-6xl mx-auto px-4 flex flex-col items-center text-center">
       <h2 className="text-4xl font-extrabold text-white mb-4">
         Reviews of the week
       </h2>

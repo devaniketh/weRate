@@ -15,14 +15,14 @@ export default function Navbar() {
       <div className="w-full max-w-[1200px] h-[70px] flex items-center justify-between">
         <div className="h-[40px]">
           <Link href="/">
-            <Image src="/logo.png" alt="Logo" className="h-[40px] w-auto" width={100} height={60} />
+            <Image src="/logo1.png" alt="Logo" className="h-[40px] w-auto" width={100} height={60} />
           </Link>
         </div>
 
         <ul className="flex gap-8 list-none m-0">
           <li>
             <a
-              href="#projects"
+              href="#features"
               className="text-[#f3ecfe] font-medium transition-colors hover:text-white"
             >
               Features
@@ -30,7 +30,7 @@ export default function Navbar() {
           </li>
           <li>
             <a
-              href="#about"
+              href="#reviews"
               className="text-[#f3ecfe] font-medium transition-colors hover:text-white"
             >
               Reviews

@@ -16,6 +16,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "weRate | Turn reviews into rewards",
   description: "cd",
+  // icons: {
+  //   icon: '/logo.png',
+  // },
 };
 
 export default function RootLayout({
