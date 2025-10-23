@@ -14,8 +14,9 @@ export default function Footer() {
         background: "linear-gradient(to right, #040404, #040404)",
       }}
     >
-      <div className="max-w-6xl mx-auto flex flex-row justify-start items-start text-[#85838b] min-h-[300px] px-10 gap-32">
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-start items-start text-[#85838b] min-h-[300px] px-6 md:px-10 gap-10 md:gap-32">
 
+        {/* Left Section */}
         <div className="flex flex-col items-start">
           <div className="mb-6">
             <Image
@@ -61,7 +62,10 @@ export default function Footer() {
             </a>
           </div>
         </div>
-        <div className="flex flex-row items-start gap-56">
+
+        {/* Menu / Legal / Socials Section */}
+        <div className="flex flex-col md:flex-row items-start md:items-start gap-10 md:gap-20 w-full">
+
           {/* Menu */}
           <div className="flex flex-col items-start">
             <h3 className="text-white text-xl font-semibold mb-4">Menu</h3>
@@ -71,6 +75,8 @@ export default function Footer() {
               <li className="hover:text-white transition-colors cursor-pointer">FAQ</li>
             </ul>
           </div>
+
+          {/* Legal */}
           <div className="flex flex-col items-start">
             <h3 className="text-white text-xl font-semibold mb-4">Legal</h3>
             <ul className="space-y-3 text-[#85838b]">
@@ -96,43 +102,44 @@ export default function Footer() {
               </li>
             </ul>
           </div>
+
+          {/* Socials */}
           <div className="flex flex-col items-start">
             <h3 className="text-white text-xl font-semibold mb-4">Socials</h3>
             <ul className="space-y-3 text-[#85838b]">
-              <ul className="space-y-3 text-[#85838b]">
-                <li>
-                  <a
-                    href="https://discord.com/invite/zypdgGMVu5"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:text-white transition-colors cursor-pointer"
-                  >
-                    Discord
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://x.com/weRate_Official"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:text-white transition-colors cursor-pointer"
-                  >
-                    Twitter
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://medium.com/@werateofficial"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:text-white transition-colors cursor-pointer"
-                  >
-                    Medium
-                  </a>
-                </li>
-              </ul>
-              </ul>
+              <li>
+                <a
+                  href="https://discord.com/invite/zypdgGMVu5"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white transition-colors cursor-pointer"
+                >
+                  Discord
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://x.com/weRate_Official"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white transition-colors cursor-pointer"
+                >
+                  Twitter
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://medium.com/@werateofficial"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white transition-colors cursor-pointer"
+                >
+                  Medium
+                </a>
+              </li>
+            </ul>
           </div>
+
         </div>
       </div>
     </footer>
