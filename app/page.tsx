@@ -10,6 +10,8 @@ import FeatureCards from "@/components/FeatureCards";
 import NewFeatureContainer from "@/components/NewFeatureContainer";
 import ReviewsSection from "@/components/ReviewsSection";
 import OptInFaqBlock from "@/components/OptInFaqBlock"
+import PostFaqBlock from "@/components/PostFaqBlock";
+import Footer from "@/components/Footer";
 
 
 export default function Home() {
@@ -24,6 +26,8 @@ export default function Home() {
     <NewFeatureContainer/>
     <ReviewsSection/>
     <OptInFaqBlock/>
+    <PostFaqBlock/>
+    <Footer/>
    </div>
   );
 }

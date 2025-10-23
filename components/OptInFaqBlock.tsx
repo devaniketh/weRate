@@ -44,9 +44,9 @@ export default function OptInFaqBlock() {
           backgroundBlendMode: "overlay",
         }}
       >
-        <div className="flex flex-col justify-center items-center text-center h-full w-full gap-6">
+        <div className="flex flex-col justify-center items-center text-center h-full w-full gap-8">
           <div>
-            <h2 className="text-[#faf7ff] text-4xl font-extrabold mb-4">
+            <h2 className="text-[#faf7ff] text-4xl font-extrabold mb-6">
               Don’t miss a check-in
             </h2>
             <p className="text-[#85838b] text-lg">
