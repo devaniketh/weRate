@@ -6,7 +6,7 @@ export default function PostFaqBlock() {
   return (
     <section className="py-16 max-w-6xl mx-auto px-4">
       <div
-        className="rounded-3xl p-10 h-[650px] w-full mb-20"
+        className="rounded-3xl p-10 h-[650px] w-full mb-20 relative overflow-hidden flex items-center justify-between"
         style={{
           backgroundImage: `
             linear-gradient(to right, #081115, #283033),
@@ -29,7 +29,43 @@ export default function PostFaqBlock() {
           `,
           backgroundBlendMode: "overlay",
         }}
-      ></div>
+      >
+        {/* Left Text Section */}
+        <div className="relative z-10 max-w-xl">
+          <h3 className="text-5xl md:text-6xl font-bold text-white mb-8 leading-tight">
+            Continue<br />exploring. Start<br />earning.
+          </h3>
+
+          <p className="text-gray-300 text-lg mb-8 leading-relaxed">
+            Your city is waiting. Check in, leave reviews, and unlock real<br />
+            rewards — all from one sleek app.
+          </p>
+
+          {/* Store Buttons */}
+          <div className="flex gap-4">
+            <img 
+              src="/a.png" 
+              alt="App Store" 
+              className="h-12 cursor-pointer hover:opacity-80 transition-opacity"
+            />
+            <img 
+              src="/p.png" 
+              alt="Play Store" 
+              className="h-12 cursor-pointer hover:opacity-80 transition-opacity"
+            />
+          </div>
+        </div>
+
+        {/* Right Tilted Image */}
+        <div className="absolute right-0 bottom-0 md:bottom-[-40px] md:right-[20px] z-0">
+          <img
+            src="/tilted.png"
+            alt="App Preview"
+            className="w-[200px] md:w-[800px] rotate-[-4deg] translate-x-[100px] translate-y-[215px] object-contain"
+
+          />
+        </div>
+      </div>
     </section>
   )
 }
