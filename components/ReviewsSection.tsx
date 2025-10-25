@@ -1,4 +1,3 @@
-
 "use client"
 
 import React from "react"
@@ -26,10 +25,9 @@ export default function ReviewsSection() {
         viewport={{ once: true, amount: 0.3 }}
         variants={{
           hidden: {},
-          visible: { transition: { staggerChildren: 0.1 } }
+          visible: { transition: { staggerChildren: 0.1 } },
         }}
       >
-        {/* Review Cards */}
         {[
           {
             img: "/a1.png",
@@ -70,7 +68,11 @@ export default function ReviewsSection() {
         ].map((r, i) => (
           <motion.div
             key={i}
-            className="bg-[#050e12] rounded-2xl p-6 h-52 flex flex-col items-start border border-[#111a1e]"
+            className="relative bg-[#050e12] rounded-2xl p-6 h-52 flex flex-col items-start border border-transparent 
+            before:absolute before:inset-0 before:rounded-2xl 
+            before:bg-[linear-gradient(135deg,rgba(140,170,255,0.25),rgba(255,255,255,0.08))] 
+            before:opacity-70 before:blur-[20px] before:-z-10 before:transition-all before:duration-300
+            hover:before:opacity-100 hover:before:blur-[24px]"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}
@@ -92,9 +94,11 @@ export default function ReviewsSection() {
                 <p className="text-[#8e9096] text-sm">{r.tag}</p>
               </div>
             </div>
+
             <div className="flex gap-2 mt-5 ml-[0px]">
               <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
             </div>
+
             <p className="text-[#faf7ff] text-base mt-4 ml-[0px] text-left">
               {r.text}
             </p>
@@ -104,6 +108,7 @@ export default function ReviewsSection() {
     </section>
   )
 }
+
 
 
 // "use client"
